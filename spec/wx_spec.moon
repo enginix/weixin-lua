@@ -1,6 +1,6 @@
 -- vim: et ts=2 sw=2:
 import types from require "tableshape"
-import extract_params, make_http, assert_shape from require "spec.helpers"
+import make_http, assert_shape from require "spec.helpers"
 
 import sign, verify, encode_xml, parse_xml from require "payments.weixin.helpers"
 

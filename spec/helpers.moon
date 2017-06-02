@@ -1,12 +1,6 @@
 
-import parse_query_string from require "lapis.util"
-
 assert_shape = (obj, shape) ->
   assert shape obj
-
-extract_params = (str) ->
-  params = assert parse_query_string str
-  {k,v for k,v in pairs params when type(k) == "string"}
 
 make_http = (handle) ->
 
@@ -22,4 +16,4 @@ make_http = (handle) ->
 
   fn, http_requests
 
-{:extract_params, :make_http, :assert_shape}
+{:make_http, :assert_shape}
